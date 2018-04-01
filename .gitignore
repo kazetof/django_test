@@ -2,3 +2,4 @@ __pycache__/
 *.py[cod]
 /mysite/mysite/KEY.py
 /mysite/media/*
+/mysite/blog/media/*
