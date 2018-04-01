@@ -1,0 +1,24 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang = "ja-jp">
+<head>
+    <title>投稿一覧</title>
+</head>
+<body>
+    <h1>これは投稿一覧のページです！</h1>
+
+    <h2>最新の投稿</h2>
+
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br /><br />
+        {{ post.published }}
+        <br /><br />
+        {{ post.body }}
+        <br /><br />
+    {% endfor %}
+
+</body>
+</html>
