@@ -9,4 +9,5 @@ from django.views.static import serve
 urlpatterns = [
     url(r'^$', views.blog, name='blog'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    url(r'^(?P<post_id>[0-9]+)/$', views.post_details, name="post_details"),
 ]
